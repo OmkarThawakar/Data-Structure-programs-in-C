@@ -56,16 +56,14 @@ void merge(int *a, int low, int high, int mid)
 // from main mergesort function gets called
 int main()
 {
-    int a[30], i;
-    int num;
+    int a[30], i, b[30];
     printf("\nenter  the number of elements:");
-    scanf("%d",&num);
-    for (i = 0; i < num; i++) { 
+    for (i = 0; i < 5; i++) { 
         scanf("%d",&a[i]);
     }
     mergesort(a, 0, 4);
     printf("sorted array\n");
-    for (i = 0; i < num; i++)
+    for (i = 0; i < 5; i++)
     {
 	printf("%d\t",a[i]);
     }
